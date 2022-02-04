@@ -1,6 +1,6 @@
 T = int(input())
 N = 0
-for i in range(T):
+for i in range(max(T-54,1),T):
     sum = 0
     for j in range(len(str(i))):
         sum += int(str(i)[j])
