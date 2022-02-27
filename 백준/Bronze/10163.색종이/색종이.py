@@ -1,3 +1,4 @@
+import sys; input = sys.stdin.readline
 area = [[0]*1001 for _ in range(1001)]
 num = [0] * 101
 
