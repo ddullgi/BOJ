@@ -1,9 +1,12 @@
 N = int(input())
 
 memo = [0] + [-1] * N
-square = [i * i for i in range(316, 0, -1)]
+square = [i * i for i in range(int(N ** 0.5), 0, -1)]
 
 def dp(n):
+    if int(n ** 0.5)**2 == n:
+        memo[n] = 1
+        return memo[n]
     arr = []
     for i in square:
         if i > n:
