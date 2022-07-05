@@ -1,5 +1,6 @@
+import sys
 from collections import deque
-
+input = sys.stdin.readline
 for tc in range(int(input())):
     M, N, K = map(int, input().split())
 
