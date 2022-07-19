@@ -15,7 +15,6 @@ while True:
             if len(stack) == 0 or stack.pop() != '[':
                 result = 'no'
                 break
-    if result == 'yes' and len(stack) == 0:
-        print('yes')
-    else:
-        print('no')
+    if len(stack) != 0:
+        result = 'no'
+    print(result)
