@@ -1,0 +1,11 @@
+-- 코드를 입력하세요
+SELECT COUNT(*) as count
+FROM 
+(
+    SELECT *
+    FROM ANIMAL_INS
+    WHERE NAME IS NOT NULL
+    GROUP BY NAME
+) AS GROUP_TABLE
+
+
